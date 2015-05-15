@@ -1,12 +1,9 @@
 {
   "manifest_version": 2,
-
   "name": "GmailBackgrounds",
-  "description": "Random HQ backgrounds for gmail.",
-  "version": "0.0.0.1",
+  "description": "Random High Quality scenic backgrounds for Gmail.",
+  "version": "0.1.0.0",
   "permissions": [
-  "tabs",
-	"activeTab",
 	"http://*/*",
 	"https://*/*"  ],
   "content_scripts" : [
@@ -16,5 +13,13 @@
     "run_at": "document_start"
   }
   ],
+  "icons": {
+      "128": "icons/gm128.png",
+      "19": "icons/gm19.png",
+      "32": "icons/gm32.png",
+      "48": "icons/gm48.png",
+      "64": "icons/gm64.png"
+   },
+  "update_url": "https://clients2.google.com/service/update2/crx",
   "web_accessible_resources": ["backgrounds/*"]
 }

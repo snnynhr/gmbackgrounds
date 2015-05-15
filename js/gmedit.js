@@ -1,6 +1,7 @@
-var NUMPICTURES = 32.0
+var NUMPICTURES = 43.0;
 var set = false;
-var whatToObserve = {childList: true, attributes: true, subtree: true, attributeOldValue: true, attributeFilter: ['class', 'style']};
+var whatToObserve = {childList: true, attributes: true, subtree: true,
+    attributeOldValue: true, attributeFilter: ['class', 'style']};
 var mutationObserver = new MutationObserver(function(mutationRecords) {
   $.each(mutationRecords, function(index, mutationRecord) {
     if (mutationRecord.type === 'attributes') {
@@ -12,17 +13,15 @@ var mutationObserver = new MutationObserver(function(mutationRecords) {
             var v = Math.floor(Math.random() * NUMPICTURES) + 1;
 
             var inp = document.getElementsByClassName('nH');
-            inp[1].style.setProperty('background-image',
+            var x = inp[1].style;
+
+            x.setProperty('background-image',
                                      'url(chrome-extension://' + id +
                                      '/backgrounds/' + v +
                                       '.jpg' + ')', null);
-            inp[1].style.setProperty('background-position', 'center', null);
-            inp[1].style.setProperty('background-repeat', 'no-repeat', null);
-            inp[1].style.setProperty('background-size', 'cover', null);
-
-            var inp = document.getElementsByClassName('aeN');
-            console.log(inp);
-            inp[0].style.setProperty('background-color', 'rgba(0, 0, 0, .4)');
+            x.setProperty('background-position', 'center', null);
+            x.setProperty('background-repeat', 'no-repeat', null);
+            x.setProperty('background-size', 'cover', null);
         }
       }
     }
