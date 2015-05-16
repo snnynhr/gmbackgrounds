@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
-  "name": "GmailBackgrounds",
-  "description": "Random High Quality scenic backgrounds for Gmail.",
+  "name": "HQ Backgrounds for Gmail™",
+  "description": "Random high quality scenic backgrounds for Gmail™.",
   "version": "0.1.0.0",
   "permissions": [
-	"http://*/*",
-	"https://*/*"  ],
+  "http://*/*",
+  "https://*/*"  ],
   "content_scripts" : [
   {
     "matches": ["*://mail.google.com/*", "*://www.gmail.com/"],

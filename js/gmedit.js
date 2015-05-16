@@ -12,6 +12,17 @@ var mutationObserver = new MutationObserver(function(mutationRecords) {
             var id = chrome.runtime.id;
             var v = Math.floor(Math.random() * NUMPICTURES) + 1;
 
+            var inp = document.getElementsByClassName('aeJ');
+            for (i = 0; i < inp.length; i++)
+            {
+              inp[i].style.setProperty('background', 'rgba(0,0,0,0.0)');
+            }
+            var inp = document.getElementsByClassName('aeJ');
+            // for (i = 0; i < inp.length; i++)
+            // {
+            //   inp[i].style.setProperty('background', 'rgba(0,0,0,0.0)');
+            // }
+
             var inp = document.getElementsByClassName('nH');
             var x = inp[1].style;
 
