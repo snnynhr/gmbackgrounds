@@ -1,4 +1,4 @@
-var NUMPICTURES = 30.0;
+var NUMPICTURES = 67.0;
 var set = false;
 var whatToObserve = {childList: true, attributes: true, subtree: true,
     attributeOldValue: true, attributeFilter: ['class', 'style']};
@@ -18,13 +18,15 @@ var mutationObserver = new MutationObserver(function(mutationRecords) {
               inp[i].style.setProperty('background', 'rgba(0,0,0,0.0)');
             }
 
-            // var inp = document.getElementsByClassName('aib');
-            // console.log(inp)
-            // for (i = 0; i < inp.length; i++)
-            // {
-            //   console.log(inp[i]);
-            //   inp[i].style.setProperty('background', 'rgba(45,45,45,0.2)');
-            // }
+            //var inp = document.getElementsByClassName('aZ6');
+            //console.log(inp[0]);
+            //console.log(inp[1]);
+            //console.log(inp[2]);
+            //for (i = 0; i < inp.length; i++)
+            //{
+              //console.log(inp[1]);
+            // inp[1].style.setProperty('background', 'rgba(25,25,25,0.4)');
+            //}
             // var inp = document.getElementsByClassName('aeJ');
             // for (i = 0; i < inp.length; i++)
             // {
